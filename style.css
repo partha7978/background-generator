@@ -6,7 +6,12 @@ body{
 	letter-spacing: 5px;
 	top: 15%;
 	/* background: linear-gradient(to right,#3eadcf,#abe9cd); */
-background: linear-gradient(to right ,#f6fba2, #20ded3);
+	background: linear-gradient(to right ,#f6fba2, #20ded3);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 h1{
 	font: 600 3.5em 'Raleway',sans-serif;
