@@ -35,7 +35,7 @@ h3{
 	align-items: center;
 }
 
-.result-content button {
+.result-content .copy-to-clipboard button {
 	margin: 1rem;
 	padding: 0.2rem;
 	background: transparent;
@@ -46,6 +46,42 @@ h3{
 	align-items: center;
 }
 
-.result-content button i {
+.result-content .copy-to-clipboard button i {
 	font-size: 0.9rem;
+}
+
+/* styling the copy to clipboard message */
+.copy-to-clipboard {
+	position: relative;
+	display: inline-block;
+}
+#copyText {
+  visibility: hidden;
+  width: 50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 90%;
+  /* left: 50%;
+  margin-left: -75px; */
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+#copyText::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+.copy-to-clipboard:hover #copyText {
+  visibility: visible;
+  opacity: 1;
 }

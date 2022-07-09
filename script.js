@@ -13,8 +13,6 @@ color2.addEventListener("input",setGradient);
 //? adding event listener to the copy button so that the text will copty to clipboard.
 const copyToClipboard = () => {
 	var copyText = css.textContent;
-	
 	navigator.clipboard.writeText(copyText);
-	// alert("Copied the text: " + copyText);
 }
 copyBtn.addEventListener("click", copyToClipboard);
