@@ -27,7 +27,7 @@
 		</div>
 	
 		<div class="main-content">
-			<h2>This is the background</h2>
+			<h2> <span> <span class="autoType"></span></span></h2>
 			<input type="color" class="color1" value="#f6fba2">
 			<input type = "color" class="color2" value="#20ded3">
 		</div>	
@@ -45,6 +45,22 @@
 
 
 	<script type="text/javascript" src="script.js"></script>
+	<script src="./autoType.js"></script>
+	<!-- for auto typing -->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+		let typed = new Typed(".autoType", {
+		  strings: [" Gradient background generator", "Perfect tool for web developers", "Just select the gradient and click copy :)"],
+		  typeSpeed: 80,
+		  backSpeed: 20,
+		  loop: true
+		})
+	  </script>
+	
+	<!-- For JQUery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+	integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
