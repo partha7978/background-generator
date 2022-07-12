@@ -22,6 +22,7 @@ h1{
 h3{
 	letter-spacing: 0.01em;
 	text-transform: none;
+	font-weight: 400;
 }
 .main-content h2 {
 	font-family: 'Source Code Pro', monospace;

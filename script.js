@@ -14,5 +14,11 @@ color2.addEventListener("input",setGradient);
 const copyToClipboard = () => {
 	var copyText = css.textContent;
 	navigator.clipboard.writeText(copyText);
+	document.getElementById("copyText").innerText = "Copied";
+	console.log("Copied");
 }
 copyBtn.addEventListener("click", copyToClipboard);
+
+document.querySelector(".copy-btn").addEventListener("mouseout", () => {
+	document.getElementById("copyText").innerText = "Copy";
+});
