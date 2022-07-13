@@ -31,10 +31,13 @@ h3{
 	margin: 3rem 1rem 1rem 1rem;
 	height: 4rem;
 	width: 50%;
-	background-color: white;
+	border-radius:10px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background: #e0e0e0;
+	box-shadow: inset 5px 5px 8px #b3b3b3,
+            inset -5px -5px 8px #ffffff;
 }
 
 .result-content .copy-to-clipboard button {
@@ -86,4 +89,7 @@ h3{
 .copy-to-clipboard:hover #copyText {
   visibility: visible;
   opacity: 1;
+}
+.fa-copy:hover {
+	cursor: pointer;
 }
