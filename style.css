@@ -49,6 +49,7 @@ h3{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	display: none;
 }
 
 .result-content .copy-to-clipboard button i {
@@ -73,6 +74,7 @@ h3{
   bottom: 90%;
   /* left: 50%;
   margin-left: -75px; */
+  margin-left: -22px;
   opacity: 0;
   transition: opacity 0.3s linear;
 }

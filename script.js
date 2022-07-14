@@ -6,6 +6,7 @@ var copyBtn = document.querySelector(".copy-btn");
 function setGradient() {
 	body.style.background = "linear-gradient(to right ," + color1.value + "," + color2.value + ")";
 	css.textContent = body.style.background  + ";";
+	document.querySelector(".copy-btn").style.display = "block";
 }
 color1.addEventListener("input",setGradient);
 color2.addEventListener("input",setGradient);
@@ -22,3 +23,9 @@ copyBtn.addEventListener("click", copyToClipboard);
 document.querySelector(".copy-btn").addEventListener("mouseout", () => {
 	document.getElementById("copyText").innerText = "Copy";
 });
+
+// //? Hiding the copy icon when the result is null.
+// if(css.innerText.length > 0) {
+// 	console.log("not null");
+// 	document.querySelector(".copy-btn").style.display = "block";
+// }
