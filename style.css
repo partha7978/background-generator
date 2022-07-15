@@ -18,14 +18,17 @@ h1{
 	text-align: center;
     width:100%;
 	text-transform: uppercase;
+	user-select: none;
 }
 h3{
 	letter-spacing: 0.01em;
 	text-transform: none;
 	font-weight: 400;
+	user-select: none;
 }
 .main-content h2 {
 	font-family: 'Source Code Pro', monospace;
+	user-select: none;
 }
 .result-content {
 	margin: 3rem 1rem 1rem 1rem;
